@@ -151,6 +151,7 @@ h3 {
     font-weight: bold;
     font-size: 2rem;
     color: white;
+    text-align: center;
 }
 
 /* style the .card-body */
@@ -162,7 +163,8 @@ h3 {
     padding-bottom: 4%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    /* align-items: flex-start; */
+    align-items: center;
     justify-content: space-around;
     border-radius: 15px;
     box-shadow: 10px 5px 5px gray;
@@ -211,7 +213,7 @@ span {
 
 
 /* // Extra large devices (large desktops, 1200px and up) */
-@media (max-width: 1144px) {
+@media (max-width: 992px) {
     
     .col1 {
         width: 100%;
@@ -257,6 +259,8 @@ span {
 
     h2 {
         justify-content: center;
+        flex-wrap: wrap;
+        margin-top:10px;
     }
 
     .card-body {
@@ -269,12 +273,11 @@ span {
         align-items: center;
         justify-content: space-around;
         width: 30rem;
-        margin: .5rem auto;
+        margin: 1rem auto;
     }
 }
 
-/* // Large devices (desktops, 992px and up) */
-@media (max-width: 992px) {}
+
 
 /* // Medium devices (tablets, 768px and up) */
 @media (max-width: 768px) {
@@ -292,6 +295,7 @@ span {
     h2{
         font-size: 18px;
     }
+  
 
 }
 
@@ -299,7 +303,7 @@ span {
 @media (max-width: 630px) {
 
     #current-weather {
-        width: 300px;
+        width: 350px;
     }
-
+   
 }
