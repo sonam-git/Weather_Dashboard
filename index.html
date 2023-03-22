@@ -1,61 +1,50 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href='./assets/css/style.css'>
-    <title>Weather Dashboard</title>
-</head>
-
-<body>
-    <!-- header -->
-    <header class="heading">Weather Dashboard</header>
-
-    <main id='container' class="container">
-        <div class="row">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <link rel="stylesheet" href='./assets/css/reset.css'>
+      <link rel="stylesheet" href='./assets/css/style.css'>
+      <title>Weather Dashboard</title>
+   </head>
+   <body>
+      <!-- header -->
+      <header class="heading">Weather Dashboard</header>
+      <main id='container' class="container">
+         <div class="row">
             <!-- search city area -->
             <div class="col1">
-                <div id='search-area'>
-                    <h1 class='h1'>Search for a City:</h1>
-                    <form id='city-search'>
-                        <input name='city' type="text" placeholder="Name of The City " id='city' autofocus='true'
-                            class='city-input' />
-                        <button type="submit" id='search-btn' class='btn'>Search</button>
-                       
-                    </form>
-
-                    <!-- line break -->
-                    <hr>
-                    </hr>
-
-                    <!-- div that holds cities already searched in local storage -->
-                    <div id="search-history"></div>
-                    
-                </div>
+               <div id='search-area'>
+                  <h1 class='h1'>Search for a City:</h1>
+                  <form id='city-search'>
+                     <input name='city' type="text" placeholder="Name of The City " id='city' autofocus='true'
+                        class='city-input' />
+                     <button type="submit" id='search-btn' class='btn'>Search</button>
+                  </form>
+                  <!-- line break -->
+                  <hr>
+                  </hr>
+                  <!-- div that holds cities already searched in local storage -->
+                  <div id="search-history"></div>
+               </div>
             </div>
-
             <!-- container that holds the current weather and 5 days forecast -->
             <div class="col2">
-                <div id='five-day' class='row spacebetween'></div>
+               <div id='five-day' class='row spacebetween'></div>
             </div>
-        </div>
-    </main>
-
-    <script
-  src="https://code.jquery.com/jquery-3.6.4.min.js"
-  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
-  crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
-      integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
-      crossorigin="anonymous"
-    ></script>
-    <script src='./assets/js/script.js'></script>
-
-</body>
-
+         </div>
+      </main>
+      <script
+         src="https://code.jquery.com/jquery-3.6.4.min.js"
+         integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+         crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+      <script
+         src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+         integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+         crossorigin="anonymous"
+         ></script>
+      <script src='./assets/js/script.js'></script>
+   </body>
 </html>

@@ -201,7 +201,7 @@ $(document).ready(function () {
     for (var i = 0; i < 5; i++) {
       let forecastDate = dayjs()
         .add(i + 1, "days")
-        .format("dddd,MM/D/YYYY");
+        .format("MM/D/YYYY");
 
       fiveDayArray.push(forecastDate);
     }
@@ -228,15 +228,15 @@ $(document).ready(function () {
       //create temp
       var tempEL = $("<p>")
         .addClass("card-text")
-        .text("Temp: " + data[i].temp.day + "°F");
+        .text("Temp:" + data[i].temp.day + "°F");
       //create wind
       var windEL = $("<p>")
         .addClass("card-text")
-        .text("Wind: " + data[i].wind_speed + " MPH");
+        .text("Wind:" + data[i].wind_speed + "MPH");
       // create humidity
       var humidityEL = $("<p>")
         .addClass("card-text")
-        .text("Humidity: " + data[0].humidity + " %");
+        .text("Humidity:" + data[0].humidity + "%");
 
       //append cardDivEl to the #five-day container
       fiveDayEl.append(cardDivEl);
